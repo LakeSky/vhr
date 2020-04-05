@@ -15,7 +15,11 @@ docker start redis
 
 docker exec -it redis /bin/bash
 
+redis-cli
+
 config set requirepass "123"
+
+Ctrl+c
 
 redis-cli -a 123
 
