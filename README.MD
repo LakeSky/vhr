@@ -2,13 +2,13 @@
 
 ## 项目启动
 
-1. 打开本地docker，运行rabbitmq
+1. 通过docker，运行rabbitmq
     
 ```shell script
 docker start rabbitmq
 ```
 
-2. 通过ssh打开redis
+2. 通过docker打开redis
 
 ```shell script
 docker start redis
@@ -26,6 +26,11 @@ redis-cli -a 123
 config get requirepass
 ```
 
+3. 通过docker打开mysql
+
+```shell script
+docker start msyql-test
+```
 ## 后端默认访问地址
 http://localhost:8081/index.html#/
 
