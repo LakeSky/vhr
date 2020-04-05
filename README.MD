@@ -21,3 +21,7 @@ redis-cli -a 123
 
 config get requirepass
 ```
+
+## 后端默认访问地址
+http://localhost:8081/index.html#/
+
