@@ -32,9 +32,9 @@ public class DepartmentController {
         dep.setId(id);
         departmentService.deleteDepById(dep);
         if (dep.getResult() == -2) {
-            return RespBean.error("该部门下有子部门，删除失败");
+            return RespBean.error("该课程下有子课程，删除失败");
         } else if (dep.getResult() == -1) {
-            return RespBean.error("该部门下有员工，删除失败");
+            return RespBean.error("该课程下有会员，删除失败");
         } else if (dep.getResult() == 1) {
             return RespBean.ok("删除成功");
         }

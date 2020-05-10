@@ -116,7 +116,7 @@ public class POIUtils {
         c11.setCellValue("联系地址");
         HSSFCell c12 = r0.createCell(12);
         c12.setCellStyle(headerStyle);
-        c12.setCellValue("所属部门");
+        c12.setCellValue("所属课程");
         HSSFCell c13 = r0.createCell(13);
         c13.setCellStyle(headerStyle);
         c13.setCellValue("职称");

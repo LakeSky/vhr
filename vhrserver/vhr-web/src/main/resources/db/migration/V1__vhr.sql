@@ -69,7 +69,7 @@ DROP TABLE IF EXISTS `department`;
 
 CREATE TABLE `department` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(32) DEFAULT NULL COMMENT '部门名称',
+  `name` varchar(32) DEFAULT NULL COMMENT '课程名称',
   `parentId` int(11) DEFAULT NULL,
   `depPath` varchar(255) DEFAULT NULL,
   `enabled` tinyint(1) DEFAULT '1',
@@ -98,7 +98,7 @@ CREATE TABLE `employee` (
   `email` varchar(20) DEFAULT NULL COMMENT '邮箱',
   `phone` varchar(11) DEFAULT NULL COMMENT '电话号码',
   `address` varchar(64) DEFAULT NULL COMMENT '联系地址',
-  `departmentId` int(11) DEFAULT NULL COMMENT '所属部门',
+  `departmentId` int(11) DEFAULT NULL COMMENT '所属课程',
   `jobLevelId` int(11) DEFAULT NULL COMMENT '职称ID',
   `posId` int(11) DEFAULT NULL COMMENT '职位ID',
   `engageForm` varchar(8) DEFAULT NULL COMMENT '聘用形式',
@@ -158,7 +158,7 @@ DROP TABLE IF EXISTS `employeeremove`;
 CREATE TABLE `employeeremove` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `eid` int(11) DEFAULT NULL,
-  `afterDepId` int(11) DEFAULT NULL COMMENT '调动后部门',
+  `afterDepId` int(11) DEFAULT NULL COMMENT '调动后课程',
   `afterJobId` int(11) DEFAULT NULL COMMENT '调动后职位',
   `removeDate` date DEFAULT NULL COMMENT '调动日期',
   `reason` varchar(255) DEFAULT NULL COMMENT '调动原因',
@@ -397,7 +397,7 @@ CREATE TABLE `role` (
 
 /*Data for the table `role` */
 
-insert  into `role`(`id`,`name`,`nameZh`) values (1,'ROLE_manager','部门经理'),(2,'ROLE_personnel','人事专员'),(3,'ROLE_recruiter','招聘主管'),(4,'ROLE_train','培训主管'),(5,'ROLE_performance','薪酬绩效主管'),(6,'ROLE_admin','系统管理员'),(13,'ROLE_test2','测试角色2'),(14,'ROLE_test1','测试角色1'),(17,'ROLE_test3','测试角色3'),(18,'ROLE_test4','测试角色4'),(19,'ROLE_test4','测试角色4'),(20,'ROLE_test5','测试角色5'),(21,'ROLE_test6','测试角色6');
+insert  into `role`(`id`,`name`,`nameZh`) values (1,'ROLE_manager','课程经理'),(2,'ROLE_personnel','人事专员'),(3,'ROLE_recruiter','招聘主管'),(4,'ROLE_train','培训主管'),(5,'ROLE_performance','薪酬绩效主管'),(6,'ROLE_admin','系统管理员'),(13,'ROLE_test2','测试角色2'),(14,'ROLE_test1','测试角色1'),(17,'ROLE_test3','测试角色3'),(18,'ROLE_test4','测试角色4'),(19,'ROLE_test4','测试角色4'),(20,'ROLE_test5','测试角色5'),(21,'ROLE_test6','测试角色6');
 
 /*Table structure for table `salary` */
 
