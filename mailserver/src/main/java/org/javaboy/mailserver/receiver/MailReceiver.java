@@ -55,7 +55,7 @@ public class MailReceiver {
         try {
             helper.setTo(employee.getEmail());
             helper.setFrom(mailProperties.getUsername());
-            helper.setSubject("入职欢迎");
+            helper.setSubject("欢迎");
             helper.setSentDate(new Date());
             Context context = new Context();
             context.setVariable("name", employee.getName());
